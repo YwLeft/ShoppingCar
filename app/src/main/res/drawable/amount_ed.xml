@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+// 中间输入框背景
+
+
+    <item android:drawable="@drawable/aok"
+
+        android:state_pressed="true"></item>
+    <item android:drawable="@drawable/aoj"
+        android:state_pressed="false"></item>
+</selector>

@@ -1,4 +1,4 @@
-package com.example.asus.cardemo.bean;
+package com.example.asus.cardemo.mode.bean;
 
 import java.util.List;
 

@@ -14,7 +14,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.asus.cardemo.R;
-import com.example.asus.cardemo.bean.CarBean;
+import com.example.asus.cardemo.mode.bean.CarBean;
 import com.example.asus.cardemo.presenter.GetCartDataPresenter;
 import com.example.asus.cardemo.view.IView.IGetCartDataView;
 import com.example.asus.cardemo.view.adapter.Car;

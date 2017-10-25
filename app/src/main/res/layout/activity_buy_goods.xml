@@ -14,7 +14,9 @@
         android:layout_gravity="center_horizontal"
 
         pv:border_thickness="3dp"
-        pv:border_inside_color="#50c0e9"/>
+        pv:border_inside_color="#50c0e9"
+
+       />
 
     <com.example.asus.cardemo.view.RoundImageView
         android:id="@+id/image_id"

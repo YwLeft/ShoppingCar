@@ -14,7 +14,7 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.example.asus.cardemo.R;
-import com.example.asus.cardemo.bean.CarBean;
+import com.example.asus.cardemo.mode.bean.CarBean;
 import com.example.asus.cardemo.view.AmountView;
 
 import java.util.List;
@@ -28,13 +28,10 @@ public class Car extends RecyclerView.Adapter<Car.MyViewHolder> {
     private Context context;
     private LayoutInflater inflater;
 
-
-
     public Car(List<CarBean.DataBean.ListBean> list, Context context) {
         this.list = list;
         this.context = context;
         inflater = LayoutInflater.from(context);
-
 
         if (list.size() != 0) {
             for (CarBean.DataBean.ListBean goodsBean : list) {
@@ -230,21 +227,6 @@ public class Car extends RecyclerView.Adapter<Car.MyViewHolder> {
     public void setOnItemBoxChangeListener(OnItemBoxChangeListener onItemBoxChangeListener) {
         this.onItemBoxChangeListener = onItemBoxChangeListener;
     }
-
-    /**
-     * 监听条目删除的接口
-     */
-
-    public interface OnItemDelListener {
-        void onDel(View v, int tag);
-    }
-
-    private OnItemDelListener onItemDelListener;
-
-    public void setOnGoodsItemClickListener(OnItemDelListener onItemDelListener) {
-        this.onItemDelListener = onItemDelListener;
-    }
-
 
     /**
      * 监听商品数量改变的接口

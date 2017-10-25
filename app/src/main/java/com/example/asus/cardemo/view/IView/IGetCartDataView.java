@@ -1,7 +1,7 @@
 package com.example.asus.cardemo.view.IView;
 
 
-import com.example.asus.cardemo.bean.CarBean;
+import com.example.asus.cardemo.mode.bean.CarBean;
 
 
 

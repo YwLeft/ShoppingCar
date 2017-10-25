@@ -3,26 +3,20 @@ package com.example.asus.cardemo.view;
 import android.app.Application;
 import android.content.Context;
 
-import java.util.concurrent.TimeUnit;
-
-import okhttp3.OkHttpClient;
+import com.example.asus.cardemo.mode.net.Okhttp;
 
 
 public class MyApp extends Application {
 
     private static Context appContext;
-    private static OkHttpClient okHttpClient;
+    private static Okhttp okhttp;
 
     @Override
     public void onCreate() {
         super.onCreate();
 
         appContext = this;
-
-        okHttpClient = new OkHttpClient().newBuilder()
-                .connectTimeout(5, TimeUnit.SECONDS)
-                .build();
-
+        okhttp = new Okhttp();
 
     }
 
@@ -30,8 +24,7 @@ public class MyApp extends Application {
         return appContext;
     }
 
-    public static OkHttpClient getOkHttpClient(){
-        return okHttpClient;
+    public static Okhttp getOkhttp() {
+        return okhttp;
     }
-
 }
